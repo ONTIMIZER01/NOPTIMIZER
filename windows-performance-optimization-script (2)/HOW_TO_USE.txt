@@ -1,0 +1,119 @@
+═══════════════════════════════════════════════════════════════
+  OPNONTI PRO - HOW TO USE (Super Simple!)
+═══════════════════════════════════════════════════════════════
+
+📍 YOU ARE HERE!
+
+This text file explains everything in plain English.
+
+═══════════════════════════════════════════════════════════════
+  STEP 1: FIND THE FILE
+═══════════════════════════════════════════════════════════════
+
+Look in this folder, you'll see:
+
+  📁 dist
+    └─ 📄 index.html  ← THIS IS THE APP!
+
+That's the only file you need!
+
+═══════════════════════════════════════════════════════════════
+  STEP 2: OPEN IT
+═══════════════════════════════════════════════════════════════
+
+OPTION A (Easiest):
+  • Double-click "index.html"
+  • It opens in your browser
+  • Done!
+
+OPTION B (If double-click doesn't work):
+  • Right-click "index.html"
+  • Choose "Open with"
+  • Select your browser (Chrome, Firefox, Edge)
+  • Done!
+
+OPTION C (Drag and drop):
+  • Open your browser (Chrome, Firefox, etc.)
+  • Drag "index.html" into the browser window
+  • Done!
+
+═══════════════════════════════════════════════════════════════
+  STEP 3: USE IT!
+═══════════════════════════════════════════════════════════════
+
+When it opens, you'll see the Opnonti Pro interface.
+
+Quick Setup for Free Fire:
+  1. Click "Gaming" at the top
+  2. Toggle "AI Drag Smoothing" ON
+  3. Toggle "Free Fire Mode" ON
+  4. Click the big "Activate" button
+  5. Start playing!
+
+═══════════════════════════════════════════════════════════════
+  THAT'S IT!
+═══════════════════════════════════════════════════════════════
+
+No installation needed!
+No internet needed!
+No setup needed!
+
+Just open the file and use it.
+
+═══════════════════════════════════════════════════════════════
+  NEED MORE HELP?
+═══════════════════════════════════════════════════════════════
+
+Read these files (in order of simplicity):
+
+  1. START_HERE.md         - First-time user guide
+  2. EASY_INSTALL.md       - Visual installation guide
+  3. INSTALLATION.md       - Detailed installation
+  4. QUICK_START.md        - 30-second Free Fire setup
+  5. README.md             - Complete documentation
+
+═══════════════════════════════════════════════════════════════
+  QUICK ANSWERS
+═══════════════════════════════════════════════════════════════
+
+Q: Do I need to install anything?
+A: NO! Just open the HTML file.
+
+Q: Do I need internet?
+A: NO! Works 100% offline.
+
+Q: Which file do I open?
+A: dist/index.html
+
+Q: Which browser?
+A: Any modern browser (Chrome, Firefox, Edge, Safari)
+
+Q: Is it safe?
+A: YES! It's just a web page running in your browser.
+
+Q: Can I move the file?
+A: YES! Copy index.html anywhere and it works.
+
+═══════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+Problem: File won't open
+Solution: Try different browser or right-click → Open with
+
+Problem: Blank page
+Solution: Make sure you opened dist/index.html (not index.html)
+
+Problem: Buttons don't work
+Solution: Use a modern browser (Chrome recommended)
+
+═══════════════════════════════════════════════════════════════
+  ENJOY!
+═══════════════════════════════════════════════════════════════
+
+You're all set! Open that file and optimize your game!
+
+Questions? Read START_HERE.md for more details.
+
+Happy Gaming! 🎮
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,255 @@
+═══════════════════════════════════════════════════════════════
+  SIMPLE STEP-BY-STEP: SETUP ONE-COMMAND INSTALL
+═══════════════════════════════════════════════════════════════
+
+Follow these exact steps to set up:
+
+  irm your-url/install.ps1 | iex
+
+═══════════════════════════════════════════════════════════════
+  PART 1: UPLOAD THE APP FILE (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Go to GitHub
+  Website: https://github.com/
+  Log in (or create account - it's free)
+
+STEP 2: Create New Repository
+  Click: Your profile picture
+  Click: "Your repositories"
+  Click: Green "New" button
+  
+  Type name: opnonti-pro
+  Select: ○ Public (must be public!)
+  Click: "Create repository"
+
+STEP 3: Upload the App
+  Click: "uploading an existing file"
+  
+  Find this file on your computer:
+    dist/index.html
+  
+  Drag it into the upload box
+  Click: "Commit changes"
+
+STEP 4: Get the File URL
+  Click: "index.html" (in the file list)
+  Click: "Raw" button (top right)
+  
+  Copy the URL from your browser address bar
+  It looks like:
+    https://raw.githubusercontent.com/USERNAME/opnonti-pro/main/index.html
+  
+  SAVE THIS URL! Write it down or copy to Notepad.
+
+═══════════════════════════════════════════════════════════════
+  PART 2: UPLOAD THE INSTALLER (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+STEP 5: Go to Gist
+  Website: https://gist.github.com/
+  (You're already logged in from Step 1)
+
+STEP 6: Prepare the Installer Script
+  On your computer:
+    - Open "install.ps1" in Notepad
+    - Find line 34 (scroll down)
+    - It says: $htmlUrl = "https://raw.githubusercontent..."
+    - Replace the URL with YOUR URL from Step 4
+    - Save the file
+
+  Example:
+    OLD: $htmlUrl = "https://raw.githubusercontent.com/YOUR_USERNAME/..."
+    NEW: $htmlUrl = "https://raw.githubusercontent.com/johnsmith/opnonti-pro/main/index.html"
+           (Use YOUR username!)
+
+STEP 7: Create the Gist
+  Back in browser at gist.github.com:
+  
+  Top box (filename): Type "install.ps1"
+  
+  Big box (content):
+    - Open install.ps1 in Notepad
+    - Select All (Ctrl+A)
+    - Copy (Ctrl+C)
+    - Click in big box
+    - Paste (Ctrl+V)
+  
+  Scroll down
+  Click: "Create public gist" (green button)
+
+STEP 8: Get Your Install URL
+  After creating gist:
+    Click: "Raw" button (top right)
+    Copy the URL from address bar
+    
+    It looks like:
+      https://gist.githubusercontent.com/USERNAME/abc123/raw/install.ps1
+    
+    THIS IS YOUR INSTALL COMMAND URL!
+    Save it!
+
+═══════════════════════════════════════════════════════════════
+  PART 3: TEST IT (2 minutes)
+═══════════════════════════════════════════════════════════════
+
+STEP 9: Test Installation
+  Open PowerShell:
+    Press: Windows + X
+    Click: "Windows PowerShell" or "Terminal"
+  
+  Type this (use YOUR URL from Step 8):
+    irm https://gist.githubusercontent.com/USERNAME/abc123/raw/install.ps1 | iex
+  
+  Press: Enter
+  
+  Wait: 10-30 seconds
+  
+  Check: Desktop for "Opnonti Pro" shortcut
+  
+  Double-click: Launch the app!
+
+STEP 10: It Works! 
+  If you see the shortcut and app opens:
+    ✅ SUCCESS! You're done!
+  
+  If not, check:
+    - Did you use YOUR username in URLs?
+    - Is GitHub repo PUBLIC?
+    - Did you update line 34 in install.ps1?
+
+═══════════════════════════════════════════════════════════════
+  PART 4: SHARE WITH USERS (1 minute)
+═══════════════════════════════════════════════════════════════
+
+STEP 11: Give Users This Command
+
+Tell your users:
+
+  "Install Opnonti Pro by opening PowerShell and running:
+  
+   irm https://gist.githubusercontent.com/USERNAME/abc123/raw/install.ps1 | iex
+   
+   (Replace with YOUR actual URL)"
+
+That's it! They get instant installation!
+
+═══════════════════════════════════════════════════════════════
+  OPTIONAL: MAKE IT SHORTER
+═══════════════════════════════════════════════════════════════
+
+Want "irm bit.ly/opnonti | iex" instead?
+
+STEP 12: Create Short URL
+  Go to: https://bitly.com/
+  Sign up (free)
+  
+  Paste your long Gist URL
+  Click: "Shorten"
+  
+  Get short URL like: bit.ly/3xyz123
+  
+  Optional: Edit to customize (bit.ly/opnonti)
+
+STEP 13: Share Short Command
+  Now users can install with:
+    irm bit.ly/opnonti | iex
+  
+  Much easier to remember!
+
+═══════════════════════════════════════════════════════════════
+  CHECKLIST
+═══════════════════════════════════════════════════════════════
+
+Did you:
+  □ Create GitHub repo (opnonti-pro)
+  □ Make it PUBLIC
+  □ Upload dist/index.html
+  □ Copy the raw URL for index.html
+  □ Edit install.ps1 line 34 with your URL
+  □ Create Gist with install.ps1
+  □ Make Gist PUBLIC
+  □ Copy raw URL for Gist
+  □ Test the install command
+  □ App installed and works
+  □ (Optional) Created short URL
+
+If all checked: ✅ YOU'RE READY TO SHARE!
+
+═══════════════════════════════════════════════════════════════
+  EXAMPLE (Real Values)
+═══════════════════════════════════════════════════════════════
+
+Let's say your GitHub username is: "gamer123"
+
+Step 2: Create repo
+  Name: opnonti-pro
+  Result: github.com/gamer123/opnonti-pro
+
+Step 4: HTML URL
+  https://raw.githubusercontent.com/gamer123/opnonti-pro/main/index.html
+
+Step 6: Edit install.ps1 line 34
+  $htmlUrl = "https://raw.githubusercontent.com/gamer123/opnonti-pro/main/index.html"
+
+Step 8: Gist URL
+  https://gist.githubusercontent.com/gamer123/a1b2c3d4/raw/install.ps1
+
+Step 9: Install command
+  irm https://gist.githubusercontent.com/gamer123/a1b2c3d4/raw/install.ps1 | iex
+
+Step 12: Short URL
+  bit.ly/opnonti
+
+Step 13: Final command
+  irm bit.ly/opnonti | iex
+
+═══════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+Problem: "Cannot download index.html"
+Fix: Make sure GitHub repo is PUBLIC, not private
+
+Problem: "File not found"
+Fix: Check line 34 URL is correct and is the RAW url
+
+Problem: Install command gives error
+Fix: Make sure Gist is PUBLIC, not secret
+
+Problem: Nothing happens
+Fix: Wait 30 seconds, check Desktop for shortcut
+
+═══════════════════════════════════════════════════════════════
+  TOTAL TIME
+═══════════════════════════════════════════════════════════════
+
+Setup (one time): 10-15 minutes
+User install: 20 seconds
+Total: One-time setup, then instant for everyone!
+
+═══════════════════════════════════════════════════════════════
+  SUMMARY
+═══════════════════════════════════════════════════════════════
+
+What you did:
+  1. Uploaded app to GitHub (index.html)
+  2. Created installer on Gist (install.ps1)
+  3. Connected them (edit line 34)
+  4. Got install command
+  5. Tested it
+  6. Share with users!
+
+What users do:
+  1. Open PowerShell
+  2. Run: irm your-url | iex
+  3. Done!
+
+═══════════════════════════════════════════════════════════════
+
+DETAILED GUIDE: STEP_BY_STEP_IRM.md
+QUICK SETUP: QUICK_IRM_SETUP.txt
+FULL GUIDE: IRM_INSTALL_GUIDE.md
+
+You now have one-command installation! 🎉
+═══════════════════════════════════════════════════════════════

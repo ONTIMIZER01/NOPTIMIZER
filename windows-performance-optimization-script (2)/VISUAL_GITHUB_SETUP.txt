@@ -1,0 +1,312 @@
+═══════════════════════════════════════════════════════════════
+  🚀 VISUAL GUIDE: GITHUB + IRM SETUP
+═══════════════════════════════════════════════════════════════
+
+TOTAL TIME: 20-30 minutes
+RESULT: One-command installation for users
+
+═══════════════════════════════════════════════════════════════
+  THE GOAL
+═══════════════════════════════════════════════════════════════
+
+BEFORE:                          AFTER:
+┌────────────────────┐           ┌────────────────────┐
+│ 1. Download ZIP    │           │                    │
+│ 2. Extract         │           │ irm bit.ly/opnonti │
+│ 3. Find installer  │    VS     │        | iex       │
+│ 4. Run it          │           │                    │
+│ 5. Click Next x3   │           └────────────────────┘
+│ 6. Wait...         │                    ↓
+│ 7. Find shortcut   │              20 SECONDS!
+│ 8. Launch          │
+└────────────────────┘
+    5 MINUTES!
+
+═══════════════════════════════════════════════════════════════
+  FLOW DIAGRAM
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Create GitHub Account
+    │
+    ↓
+STEP 2: Create Repository (opnonti-pro)
+    │
+    ↓
+STEP 3: Upload Files (index.html + install.ps1)
+    │
+    ↓
+STEP 4: Get Raw URLs
+    │
+    ↓
+STEP 5: Edit install.ps1 Line 34
+    │
+    ↓
+STEP 6: Test Install Command
+    │
+    ↓
+STEP 7: Create Short URL (optional)
+    │
+    ↓
+STEP 8: Share With Users! ✨
+
+═══════════════════════════════════════════════════════════════
+  EXACT STEPS WITH SCREENSHOTS (Described)
+═══════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────┐
+│ STEP 1: Go to https://github.com/signup                 │
+│                                                         │
+│ What you see:                                           │
+│ ┌─────────────────────────────────────┐                │
+│ │ Enter your email [_______________] │                │
+│ │ Create a password  [_______________] │                │
+│ │ Enter a username   [_______________] │ ← Remember!  │
+│ │ [ Create account ]                   │                │
+│ └─────────────────────────────────────┘                │
+│                                                         │
+│ ✅ Verify email, solve puzzle, done!                   │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│ STEP 2: Create Repository                               │
+│                                                         │
+│ Go to: https://github.com/new                          │
+│                                                         │
+│ What you fill in:                                       │
+│ ┌─────────────────────────────────────┐                │
+│ │ Repository name: opnonti-pro        │                │
+│ │ Description: [optional]             │                │
+│ │ ○ Public ← CHECK THIS              │                │
+│ │ ○ Private                           │                │
+│ │ ✅ Add a README file                │                │
+│ │ [ Create repository ]               │                │
+│ └─────────────────────────────────────┘                │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│ STEP 3: Upload Files                                    │
+│                                                         │
+│ On your repo page:                                      │
+│                                                         │
+│ Click: "Add file" → "Upload files"                     │
+│                                                         │
+│ Drag these files from your computer:                   │
+│   📄 dist/index.html                                    │
+│   📄 install.ps1                                        │
+│                                                         │
+│ Click: "Commit changes"                                │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│ STEP 4: Get Raw URLs                                    │
+│                                                         │
+│ Click on "index.html"                                  │
+│ Click "Raw" button (top right)                         │
+│                                                         │
+│ Browser address bar shows:                             │
+│ ┌─────────────────────────────────────────────────┐   │
+│ │ https://raw.githubusercontent.com/YOUR_USERNAME/ │   │
+│ │   opnonti-pro/main/index.html                    │   │
+│ └─────────────────────────────────────────────────┘   │
+│                                                         │
+│ 💾 COPY THIS URL!                                      │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│ STEP 5: Edit install.ps1 Line 34                        │
+│                                                         │
+│ Click "install.ps1" → Click pencil icon (Edit)        │
+│                                                         │
+│ Use Ctrl+F to find: $htmlUrl                          │
+│                                                         │
+│ BEFORE:                                                 │
+│ $htmlUrl = "https://raw.githubusercontent.com/         │
+│   YOUR_USERNAME/opnonti-pro/main/dist/index.html"      │
+│                                                         │
+│ AFTER (replace with YOUR URL from Step 4):             │
+│ $htmlUrl = "https://raw.githubusercontent.com/         │
+│   gamer123/opnonti-pro/main/index.html"                │
+│             ↑ your actual username                   │
+│                                                         │
+│ Click: "Commit changes"                                │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│ STEP 6: Test Installation                               │
+│                                                         │
+│ Open PowerShell (Windows + X)                          │
+│                                                         │
+│ Type:                                                   │
+│ ┌─────────────────────────────────────────────────┐   │
+│ │ irm https://raw.githubusercontent.com/YOUR_    │   │
+│ │ USERNAME/opnonti-pro/main/install.ps1 | iex    │   │
+│ └─────────────────────────────────────────────────┘   │
+│                                                         │
+│ Wait 30 seconds...                                     │
+│                                                         │
+│ ✅ Desktop shortcut appears!                           │
+│ ✅ Start Menu entry created!                           │
+│ ✅ App launches when clicked!                          │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│ STEP 7: Create Short URL (Optional)                     │
+│                                                         │
+│ Go to: https://bitly.com/                              │
+│ Sign up (free)                                         │
+│                                                         │
+│ Paste your long URL:                                   │
+│ ┌─────────────────────────────────────────────────┐   │
+│ │ [https://raw.githubusercontent.com/gamer123/   ] │   │
+│ │ opnonti-pro/main/install.ps1                     │   │
+│ └─────────────────────────────────────────────────┘   │
+│                                                         │
+│ Click "Shorten" → Get: bit.ly/3xYz123                 │
+│ Edit to customize: bit.ly/opnonti                      │
+└─────────────────────────────────────────────────────────┘
+                         ↓
+┌─────────────────────────────────────────────────────────┐
+│ STEP 8: Share With Users! 🎉                            │
+│                                                         │
+│ Tell users to run:                                     │
+│                                                         │
+│ ┌─────────────────────────────────────────────────┐   │
+│ │                                                 │   │
+│ │     irm bit.ly/opnonti | iex                    │   │
+│ │                                                 │   │
+│ └─────────────────────────────────────────────────┘   │
+│                                                         │
+│ That's it! They install in 20 seconds! ✨              │
+└─────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════
+  CHECKPOINT: ARE YOU ON TRACK?
+═══════════════════════════════════════════════════════════════
+
+After each step, verify:
+
+✅ STEP 1: GitHub account created
+   Check: You can log in to github.com
+
+✅ STEP 2: Repository created
+   Check: URL is https://github.com/YOUR_USERNAME/opnonti-pro
+
+✅ STEP 3: Files uploaded
+   Check: You see index.html and install.ps1 in repo
+
+✅ STEP 4: URLs copied
+   Check: You have URLs saved in Notepad
+
+✅ STEP 5: Line 34 edited
+   Check: install.ps1 has YOUR username, not "YOUR_USERNAME"
+
+✅ STEP 6: Install tested
+   Check: Shortcut appears on Desktop
+
+✅ STEP 7: Short URL created (optional)
+   Check: bit.ly/opnonti works
+
+✅ STEP 8: Ready to share
+   Check: Install command works for others too
+
+═══════════════════════════════════════════════════════════════
+  COMMON MISTAKES TO AVOID
+═══════════════════════════════════════════════════════════════
+
+❌ Making repo PRIVATE
+   ✅ MUST be PUBLIC (free users see it)
+
+❌ Forgetting to replace "YOUR_USERNAME" in line 34
+   ✅ Use your ACTUAL username
+
+❌ Using wrong URL (not raw.githubusercontent.com)
+   ✅ URL must start with https://raw.githubusercontent.com
+
+❌ Skipping the test step
+   ✅ Always test before sharing
+
+❌ Not verifying email
+   ✅ Check inbox for GitHub verification
+
+═══════════════════════════════════════════════════════════════
+  EXAMPLE WITH REAL VALUES
+═══════════════════════════════════════════════════════════════
+
+Let's say your username is: gamer123
+
+REPO URL:
+  https://github.com/gamer123/opnonti-pro
+
+HTML RAW URL:
+  https://raw.githubusercontent.com/gamer123/opnonti-pro/main/index.html
+
+INSTALL RAW URL:
+  https://raw.githubusercontent.com/gamer123/opnonti-pro/main/install.ps1
+
+LINE 34 SHOULD BE:
+  $htmlUrl = "https://raw.githubusercontent.com/gamer123/opnonti-pro/main/index.html"
+
+TEST COMMAND:
+  irm https://raw.githubusercontent.com/gamer123/opnonti-pro/main/install.ps1 | iex
+
+SHORT URL:
+  bit.ly/opnonti
+
+FINAL SHARE COMMAND:
+  irm bit.ly/opnonti | iex
+
+═══════════════════════════════════════════════════════════════
+  TROUBLESHOOTING QUICK REFERENCE
+═══════════════════════════════════════════════════════════════
+
+"404 Not Found" → Check repo is PUBLIC, file exists
+"irm not recognized" → Use full: Invoke-RestMethod ... | Invoke-Expression
+"Cannot download" → Check line 34 URL is correct
+"Access denied" → Make repo PUBLIC
+"No shortcut" → Check C:\Users\NAME\AppData\Local\OpnontiPro\
+
+═══════════════════════════════════════════════════════════════
+  NEED MORE HELP?
+═══════════════════════════════════════════════════════════════
+
+DETAILED TEXT GUIDE:
+  📖 UPLOAD_TO_GITHUB_COMPLETE.md
+
+STEP BY STEP:
+  📖 STEP_BY_STEP_IRM.md
+
+SIMPLE VERSION:
+  📖 SIMPLE_STEPS.txt
+
+TESTING:
+  📖 HOW_TO_TEST.md
+
+═══════════════════════════════════════════════════════════════
+  FINAL CHECKLIST
+═══════════════════════════════════════════════════════════════
+
+Before sharing, confirm ALL:
+
+  □ GitHub account created
+  □ Repository "opnonti-pro" created
+  □ Repository is PUBLIC
+  □ index.html uploaded
+  □ install.ps1 uploaded
+  □ Got raw URL for index.html
+  □ Got raw URL for install.ps1
+  □ Edited install.ps1 line 34 (YOUR URL)
+  □ Committed changes
+  □ Tested install command
+  □ Desktop shortcut appeared
+  □ App launches correctly
+  □ (Optional) Created short URL
+  □ READY TO SHARE! 🎉
+
+═══════════════════════════════════════════════════════════════
+
+TIME TO COMPLETE: 20-30 minutes
+DIFFICULTY: Beginner-friendly
+RESULT: Professional one-command installation!
+
+START WITH STEP 1! 🚀
+═══════════════════════════════════════════════════════════════

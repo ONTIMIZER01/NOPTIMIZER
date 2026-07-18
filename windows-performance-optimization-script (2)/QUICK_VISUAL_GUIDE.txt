@@ -1,0 +1,274 @@
+═══════════════════════════════════════════════════════════════
+  VISUAL GUIDE: SETUP IRM INSTALL IN 3 PARTS
+═══════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────┐
+│ PART 1: Upload App to GitHub (5 min)                       │
+└─────────────────────────────────────────────────────────────┘
+
+  YOU                      GITHUB
+  
+  📄 dist/index.html  →  Upload  →  📦 GitHub Repo
+                                      (opnonti-pro)
+                                           ↓
+                                      Click "Raw"
+                                           ↓
+                                   📋 Copy this URL:
+                     https://raw.githubusercontent.com/
+                     USERNAME/opnonti-pro/main/index.html
+                                           ↓
+                                    💾 SAVE IT!
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ PART 2: Create Installer (5 min)                           │
+└─────────────────────────────────────────────────────────────┘
+
+  YOU                         STEPS
+  
+  📄 install.ps1
+       ↓
+  Open in Notepad
+       ↓
+  Find line 34:
+  $htmlUrl = "..."
+       ↓
+  Replace with URL from Part 1
+       ↓
+  Save file
+       ↓
+  Copy ALL text (Ctrl+A, Ctrl+C)
+       ↓
+  
+  GITHUB GIST              
+  https://gist.github.com/
+       ↓
+  Filename: install.ps1
+  Content: [paste here]
+       ↓
+  Click "Create public gist"
+       ↓
+  Click "Raw" button
+       ↓
+  📋 Copy URL:
+  https://gist.githubusercontent.com/
+  USERNAME/abc123/raw/install.ps1
+       ↓
+  💾 THIS IS YOUR INSTALL URL!
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ PART 3: Test & Share (2 min)                               │
+└─────────────────────────────────────────────────────────────┘
+
+  POWERSHELL                    RESULT
+  
+  irm YOUR_GIST_URL | iex  →  Installing...
+                                   ↓
+                              Downloads files
+                                   ↓
+                              Creates shortcut
+                                   ↓
+                              ✅ Done!
+                                   ↓
+                         🖥️ Desktop shortcut appears
+                                   ↓
+                         Double-click to launch
+                                   ↓
+                         🎮 Opnonti Pro opens!
+
+
+═══════════════════════════════════════════════════════════════
+  THE FINAL COMMAND
+═══════════════════════════════════════════════════════════════
+
+  Users install with ONE command:
+
+  ┌───────────────────────────────────────────────────────────┐
+  │                                                           │
+  │  irm https://gist.githubusercontent.com/                 │
+  │      USERNAME/abc123/raw/install.ps1 | iex               │
+  │                                                           │
+  │  (Use YOUR actual URL)                                   │
+  │                                                           │
+  └───────────────────────────────────────────────────────────┘
+
+  Or with short URL:
+
+  ┌───────────────────────────────────────────────────────────┐
+  │                                                           │
+  │  irm bit.ly/opnonti | iex                                │
+  │                                                           │
+  └───────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════
+  WHAT HAPPENS BEHIND THE SCENES
+═══════════════════════════════════════════════════════════════
+
+  User types command
+         ↓
+  PowerShell downloads install.ps1 from Gist
+         ↓
+  install.ps1 runs automatically
+         ↓
+  Downloads index.html from GitHub
+         ↓
+  Saves to: C:\Users\NAME\AppData\Local\OpnontiPro\
+         ↓
+  Creates launcher script
+         ↓
+  Creates Desktop shortcut
+         ↓
+  Creates Start Menu entry
+         ↓
+  Asks "Launch now?"
+         ↓
+  ✅ Installation complete!
+
+
+═══════════════════════════════════════════════════════════════
+  FILE LOCATIONS
+═══════════════════════════════════════════════════════════════
+
+  After installation:
+
+  📁 C:\Users\USERNAME\AppData\Local\OpnontiPro\
+     ├─ opnonti-pro.html        ← The app
+     └─ launch.ps1              ← Launcher script
+
+  🖥️ Desktop\
+     └─ Opnonti Pro.lnk         ← Shortcut
+
+  📋 Start Menu\Programs\
+     └─ Opnonti Pro.lnk         ← Start menu entry
+
+
+═══════════════════════════════════════════════════════════════
+  COMPARISON
+═══════════════════════════════════════════════════════════════
+
+  OLD WAY:                      NEW WAY (IRM):
+  
+  1. Download ZIP               1. irm url | iex
+  2. Extract files              2. Done!
+  3. Find installer
+  4. Run installer
+  5. Click Next, Next, Next
+  6. Wait...
+  7. Find shortcut
+  8. Launch
+  
+  Time: 5 minutes              Time: 20 seconds
+  Steps: 8                     Steps: 1
+
+
+═══════════════════════════════════════════════════════════════
+  SETUP CHECKLIST (Copy This!)
+═══════════════════════════════════════════════════════════════
+
+  PART 1: GitHub Repository
+  □ Go to github.com
+  □ Create new repo: opnonti-pro
+  □ Make it PUBLIC
+  □ Upload dist/index.html
+  □ Click file → Click Raw
+  □ Copy URL, save it
+  
+  PART 2: GitHub Gist
+  □ Go to gist.github.com
+  □ Open install.ps1 in Notepad
+  □ Edit line 34 with URL from Part 1
+  □ Save install.ps1
+  □ Copy all text from install.ps1
+  □ Paste into Gist
+  □ Filename: install.ps1
+  □ Click Create public gist
+  □ Click Raw button
+  □ Copy URL, save it
+  
+  PART 3: Test
+  □ Open PowerShell
+  □ Run: irm [your-gist-url] | iex
+  □ Wait for installation
+  □ Check Desktop for shortcut
+  □ Launch app to verify
+  
+  PART 4: Share
+  □ Give users your install command
+  
+  DONE! ✅
+
+
+═══════════════════════════════════════════════════════════════
+  TROUBLESHOOTING FLOWCHART
+═══════════════════════════════════════════════════════════════
+
+  Install fails?
+       ↓
+  Is repo PUBLIC? ──No→ Make it public
+       ↓ Yes
+  Did you edit line 34? ──No→ Edit it
+       ↓ Yes
+  Is Gist PUBLIC? ──No→ Make it public
+       ↓ Yes
+  Is URL correct? ──No→ Check spelling
+       ↓ Yes
+  Wait 30 seconds more
+       ↓
+  Check Desktop for shortcut
+       ↓
+  Found it? ──Yes→ ✅ Success!
+       ↓ No
+  Check: C:\Users\NAME\AppData\Local\OpnontiPro\
+       ↓
+  Files there? ──Yes→ Create shortcut manually
+       ↓ No
+  Re-read SIMPLE_STEPS.txt
+
+
+═══════════════════════════════════════════════════════════════
+  EXAMPLE WITH REAL VALUES
+═══════════════════════════════════════════════════════════════
+
+  Your GitHub username: johndoe
+
+  PART 1 Result:
+  https://raw.githubusercontent.com/johndoe/opnonti-pro/main/index.html
+
+  PART 2 - Line 34:
+  $htmlUrl = "https://raw.githubusercontent.com/johndoe/opnonti-pro/main/index.html"
+
+  PART 2 Result:
+  https://gist.githubusercontent.com/johndoe/a1b2c3d4e5f6/raw/install.ps1
+
+  INSTALL COMMAND:
+  irm https://gist.githubusercontent.com/johndoe/a1b2c3d4e5f6/raw/install.ps1 | iex
+
+  SHORT URL (optional):
+  bit.ly/opnonti
+
+  FINAL COMMAND:
+  irm bit.ly/opnonti | iex
+
+
+═══════════════════════════════════════════════════════════════
+  READY TO START?
+═══════════════════════════════════════════════════════════════
+
+  Read in order:
+  
+  1. THIS FILE (you're here) ← Overview
+  2. SIMPLE_STEPS.txt ← Step by step
+  3. STEP_BY_STEP_IRM.md ← Detailed guide
+  
+  Start with SIMPLE_STEPS.txt!
+
+═══════════════════════════════════════════════════════════════
+
+  Total setup time: 10-15 minutes
+  User install time: 20 seconds
+  
+  Worth it? YES! ✨
+
+═══════════════════════════════════════════════════════════════

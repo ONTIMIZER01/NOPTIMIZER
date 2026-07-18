@@ -1,0 +1,167 @@
+═══════════════════════════════════════════════════════════════
+  SETUP IRM POWERSHELL INSTALLATION
+═══════════════════════════════════════════════════════════════
+
+Want users to install with one command like this?
+
+    irm your-url/install.ps1 | iex
+
+Here's how to set it up!
+
+═══════════════════════════════════════════════════════════════
+  EASIEST METHOD: GITHUB GIST (5 Minutes)
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Create a Gist
+  1. Go to: https://gist.github.com/
+  2. Sign in to GitHub
+  3. Paste the content of "install.ps1" file
+  4. Name it: opnonti-pro-install.ps1
+  5. Click "Create public gist"
+
+STEP 2: Get Raw URL
+  1. Click the "Raw" button
+  2. Copy the URL (looks like):
+     https://gist.githubusercontent.com/username/abc123/raw/install.ps1
+
+STEP 3: Edit install.ps1
+  1. Open the Gist you just created
+  2. Click "Edit"
+  3. Find line 34:
+     $htmlUrl = "https://raw.githubusercontent.com/..."
+  4. Change to your GitHub raw URL for dist/index.html
+  5. Click "Update gist"
+
+STEP 4: Share Install Command
+  Tell users to run:
+  
+  irm https://gist.githubusercontent.com/username/abc123/raw/install.ps1 | iex
+
+DONE! Users can now install with one command!
+
+═══════════════════════════════════════════════════════════════
+  BETTER METHOD: GITHUB REPOSITORY (10 Minutes)
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Create GitHub Repo
+  1. Go to: https://github.com/new
+  2. Name: opnonti-pro
+  3. Public repository
+  4. Click "Create repository"
+
+STEP 2: Upload Files
+  1. Click "uploading an existing file"
+  2. Upload these files:
+     • dist/index.html
+     • install.ps1
+  3. Click "Commit changes"
+
+STEP 3: Get Raw URLs
+  1. Click on "install.ps1"
+  2. Click "Raw" button
+  3. Copy URL (like):
+     https://raw.githubusercontent.com/username/opnonti-pro/main/install.ps1
+  
+  4. Do same for dist/index.html
+
+STEP 4: Edit install.ps1 on GitHub
+  1. Click "install.ps1"
+  2. Click pencil icon (Edit)
+  3. Find line 34
+  4. Change to your dist/index.html raw URL
+  5. Click "Commit changes"
+
+STEP 5: Share Install Command
+  Tell users to run:
+  
+  irm https://raw.githubusercontent.com/username/opnonti-pro/main/install.ps1 | iex
+
+DONE! Professional installation setup!
+
+═══════════════════════════════════════════════════════════════
+  OPTIONAL: CREATE SHORT URL
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Go to bit.ly
+  Website: https://bitly.com/
+
+STEP 2: Shorten URL
+  1. Paste your raw GitHub URL
+  2. Click "Shorten"
+  3. Get short URL like: bit.ly/opnonti
+
+STEP 3: Share Short Command
+  Tell users to run:
+  
+  irm bit.ly/opnonti | iex
+
+MUCH EASIER TO REMEMBER!
+
+═══════════════════════════════════════════════════════════════
+  WHAT USERS DO
+═══════════════════════════════════════════════════════════════
+
+1. Open PowerShell
+   Press: Windows + X
+   Choose: "Windows PowerShell" or "Terminal"
+
+2. Copy and paste your command:
+   irm your-url/install.ps1 | iex
+
+3. Press Enter
+
+4. Wait 10-30 seconds
+
+5. Find "Opnonti Pro" on Desktop
+
+6. Double-click to launch!
+
+═══════════════════════════════════════════════════════════════
+  EXAMPLE COMMANDS
+═══════════════════════════════════════════════════════════════
+
+Like popular tools:
+
+Scoop:
+  irm get.scoop.sh | iex
+
+Oh My Posh:
+  irm ohmyposh.dev/install.ps1 | iex
+
+Opnonti Pro (Your tool):
+  irm bit.ly/opnonti | iex
+
+═══════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+Problem: "irm is not recognized"
+Fix: User needs PowerShell 7+ or use:
+     Invoke-RestMethod instead of irm
+
+Problem: "Execution policy"
+Fix: Run PowerShell as admin, then:
+     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Problem: "Cannot download"
+Fix: Check URL is correct and public
+
+═══════════════════════════════════════════════════════════════
+  SUMMARY
+═══════════════════════════════════════════════════════════════
+
+Quick Setup:
+  1. Upload install.ps1 to GitHub Gist
+  2. Upload dist/index.html somewhere accessible
+  3. Edit install.ps1 to point to your index.html
+  4. Share the irm command!
+
+Your Command Will Be:
+  irm <YOUR_URL>/install.ps1 | iex
+
+That's it! Professional one-command installation! 🎉
+
+═══════════════════════════════════════════════════════════════
+
+Read IRM_INSTALL_GUIDE.md for complete details!
+═══════════════════════════════════════════════════════════════

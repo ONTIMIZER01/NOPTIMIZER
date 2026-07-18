@@ -1,0 +1,136 @@
+═══════════════════════════════════════════════════════════════
+  HOW TO MAKE OPNONTI PRO AN .EXE FILE
+═══════════════════════════════════════════════════════════════
+
+Want it to work like a real Windows program? Follow this!
+
+═══════════════════════════════════════════════════════════════
+  SUPER EASY METHOD (5 Minutes)
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Install Node.js
+  • Go to: https://nodejs.org/
+  • Download the LTS version (left button)
+  • Install it (click Next, Next, Next, Finish)
+  • Restart your computer
+
+STEP 2: Open Command Prompt
+  • Press Windows key + R
+  • Type: cmd
+  • Press Enter
+  • A black window opens
+
+STEP 3: Install Nativefier
+  Type this and press Enter:
+  
+  npm install -g nativefier
+  
+  Wait 1-2 minutes for it to install.
+
+STEP 4: Go to Your Project Folder
+  Type this (change the path to YOUR folder):
+  
+  cd C:\Users\YourName\Downloads\opnonti-pro
+  
+  Press Enter
+
+STEP 5: Create the .EXE
+  Copy and paste this (all one line):
+  
+  nativefier "file:///%CD%/dist/index.html" --name "Opnonti Pro" --width 1400 --height 900
+  
+  Press Enter
+  Wait 2-3 minutes...
+
+STEP 6: Find Your .EXE
+  • Look in your project folder
+  • You'll see a new folder: "Opnonti Pro-win32-x64"
+  • Open it
+  • Inside you'll find: Opnonti Pro.exe
+  
+  THAT'S YOUR APP!
+
+STEP 7: Use It!
+  • Double-click "Opnonti Pro.exe"
+  • It opens like a normal program!
+  • No browser needed!
+  • Works like real software!
+
+═══════════════════════════════════════════════════════════════
+  EVEN EASIER METHOD (1 Minute)
+═══════════════════════════════════════════════════════════════
+
+If you just want it to FEEL like an app:
+
+1. Find: dist/index.html
+2. Right-click it
+3. Choose: Create Shortcut
+4. Rename shortcut to: "Opnonti Pro"
+5. Drag shortcut to Desktop
+6. Double-click to use!
+
+It opens in your browser but in a special window.
+
+═══════════════════════════════════════════════════════════════
+  WHAT YOU GET
+═══════════════════════════════════════════════════════════════
+
+With Method 1 (Nativefier):
+  ✅ Real .exe file
+  ✅ Opens like normal software
+  ✅ No browser window
+  ✅ Can pin to taskbar
+  ✅ Can add to Start menu
+  ✅ Looks professional
+  ✅ Can share with friends (zip the folder)
+
+With Method 2 (Shortcut):
+  ✅ Works immediately
+  ✅ No installation
+  ✅ Opens in browser
+  ✅ Can pin to taskbar
+
+═══════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+Problem: "npm is not recognized"
+Fix: Install Node.js first (Step 1)
+
+Problem: Can't find the .exe
+Fix: Look for folder "Opnonti Pro-win32-x64" in your project
+
+Problem: .exe won't start
+Fix: Make sure you ran the command from the right folder
+
+Problem: Takes too long
+Fix: Be patient, creating .exe takes 2-3 minutes
+
+═══════════════════════════════════════════════════════════════
+  AFTER YOU HAVE THE .EXE
+═══════════════════════════════════════════════════════════════
+
+Make Desktop Shortcut:
+  • Right-click Opnonti Pro.exe
+  • Send to → Desktop (create shortcut)
+
+Pin to Taskbar:
+  • Right-click Opnonti Pro.exe
+  • Pin to taskbar
+
+Share with Friends:
+  • Zip the "Opnonti Pro-win32-x64" folder
+  • Send them the zip
+  • They unzip and run the .exe
+  • No installation needed!
+
+═══════════════════════════════════════════════════════════════
+  THAT'S IT!
+═══════════════════════════════════════════════════════════════
+
+Now you have Opnonti Pro as a real Windows program!
+
+Questions? Read MAKE_IT_EXE.md for detailed guide.
+
+Happy Gaming! 🎮
+═══════════════════════════════════════════════════════════════

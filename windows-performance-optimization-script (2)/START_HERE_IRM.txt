@@ -1,0 +1,227 @@
+═══════════════════════════════════════════════════════════════
+  👋 START HERE - SETUP ONE-COMMAND INSTALLATION
+═══════════════════════════════════════════════════════════════
+
+Want users to install Opnonti Pro with ONE command?
+
+  irm your-url/install.ps1 | iex
+
+Here's exactly what to do!
+
+═══════════════════════════════════════════════════════════════
+  📚 WHICH GUIDE TO READ?
+═══════════════════════════════════════════════════════════════
+
+Choose ONE based on your preference:
+
+┌─────────────────────────────────────────────────────────────┐
+│ 1. SIMPLE_STEPS.txt (RECOMMENDED!)                         │
+│    • Plain text, easy to follow                            │
+│    • Step-by-step with exact instructions                  │
+│    • Best for beginners                                    │
+│    • 10 minute read                                        │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ 2. QUICK_VISUAL_GUIDE.txt                                  │
+│    • Visual diagrams                                        │
+│    • Shows the flow                                        │
+│    • Quick overview                                        │
+│    • 5 minute read                                         │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ 3. STEP_BY_STEP_IRM.md                                     │
+│    • Complete detailed guide                                │
+│    • Includes troubleshooting                              │
+│    • Examples and tips                                     │
+│    • 15 minute read                                        │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ 4. IRM_INSTALL_GUIDE.md                                    │
+│    • Advanced options                                       │
+│    • Multiple methods                                      │
+│    • For developers                                        │
+│    • 20 minute read                                        │
+└─────────────────────────────────────────────────────────────┘
+
+🎯 RECOMMENDATION: Start with SIMPLE_STEPS.txt
+
+═══════════════════════════════════════════════════════════════
+  ⚡ SUPER QUICK VERSION (IF YOU'RE IN A HURRY)
+═══════════════════════════════════════════════════════════════
+
+3 STEPS:
+
+STEP 1: Upload App
+  • Go to github.com
+  • Create repo: opnonti-pro (PUBLIC)
+  • Upload: dist/index.html
+  • Click file → Raw → Copy URL
+
+STEP 2: Upload Installer
+  • Open install.ps1 in Notepad
+  • Edit line 34: paste URL from Step 1
+  • Go to gist.github.com
+  • Copy all text from install.ps1
+  • Paste into Gist
+  • Filename: install.ps1
+  • Create public gist
+  • Click Raw → Copy URL
+
+STEP 3: Test
+  • Open PowerShell
+  • Run: irm [your-gist-url] | iex
+  • Wait 20 seconds
+  • Check Desktop for shortcut
+
+DONE! Share your install command with users!
+
+═══════════════════════════════════════════════════════════════
+  ❓ WHAT IS IRM?
+═══════════════════════════════════════════════════════════════
+
+IRM = Invoke-RestMethod
+
+It's a PowerShell command that downloads and runs scripts.
+
+Popular tools use it:
+
+  Scoop:      irm get.scoop.sh | iex
+  Oh My Posh: irm ohmyposh.dev/install.ps1 | iex
+  Yours:      irm your-url/install.ps1 | iex
+
+Benefits:
+  ✅ One command installation
+  ✅ No download/extract/install steps
+  ✅ Professional and modern
+  ✅ Easy for users
+
+═══════════════════════════════════════════════════════════════
+  📋 WHAT YOU NEED
+═══════════════════════════════════════════════════════════════
+
+Files (you have these):
+  ✅ install.ps1 (installer script)
+  ✅ dist/index.html (the app)
+
+Accounts (free):
+  □ GitHub account (create at github.com)
+  □ Optional: Bitly account (for short URLs)
+
+Time needed:
+  • First time: 10-15 minutes
+  • After that: Users install in 20 seconds
+
+═══════════════════════════════════════════════════════════════
+  🎯 YOUR GOAL
+═══════════════════════════════════════════════════════════════
+
+Turn this:
+  1. Download ZIP
+  2. Extract files
+  3. Run installer
+  4. Click Next Next Next
+  5. Find app
+  6. Launch
+
+Into this:
+  1. irm your-url | iex
+  2. Done!
+
+═══════════════════════════════════════════════════════════════
+  ✅ AFTER SETUP
+═══════════════════════════════════════════════════════════════
+
+You'll have:
+  ✅ App hosted on GitHub
+  ✅ Installer on Gist
+  ✅ One-line install command
+  ✅ Optional: Short URL (bit.ly/opnonti)
+
+Users can install with:
+  irm your-url/install.ps1 | iex
+
+Or:
+  irm bit.ly/opnonti | iex
+
+═══════════════════════════════════════════════════════════════
+  🚀 NEXT STEP
+═══════════════════════════════════════════════════════════════
+
+Choose your guide and start reading:
+
+For simplest guide:
+  → Open: SIMPLE_STEPS.txt
+
+For visual guide:
+  → Open: QUICK_VISUAL_GUIDE.txt
+
+For complete guide:
+  → Open: STEP_BY_STEP_IRM.md
+
+═══════════════════════════════════════════════════════════════
+  💡 TIPS
+═══════════════════════════════════════════════════════════════
+
+• GitHub repo MUST be PUBLIC (not private)
+• Gist MUST be PUBLIC (not secret)
+• Line 34 in install.ps1 MUST have YOUR URL
+• Test the install yourself before sharing
+• Create short URL for easier sharing (optional)
+
+═══════════════════════════════════════════════════════════════
+  ⏱️ TIME ESTIMATE
+═══════════════════════════════════════════════════════════════
+
+Reading guide:     5 minutes
+Setting up:        10 minutes
+Testing:           2 minutes
+Total:             17 minutes
+
+User installing:   20 seconds
+
+═══════════════════════════════════════════════════════════════
+  🆘 NEED HELP?
+═══════════════════════════════════════════════════════════════
+
+If you get stuck:
+
+1. Re-read the guide carefully
+2. Check the troubleshooting section
+3. Make sure repo/gist are PUBLIC
+4. Verify line 34 has YOUR URL
+5. Read STEP_BY_STEP_IRM.md for more details
+
+═══════════════════════════════════════════════════════════════
+  📖 ALL AVAILABLE GUIDES
+═══════════════════════════════════════════════════════════════
+
+IRM Installation Guides:
+  • START_HERE_IRM.txt ← You are here!
+  • SIMPLE_STEPS.txt ← Read this next!
+  • QUICK_VISUAL_GUIDE.txt
+  • STEP_BY_STEP_IRM.md
+  • QUICK_IRM_SETUP.txt
+  • IRM_INSTALL_GUIDE.md
+
+Other Guides:
+  • HOW_TO_USE.txt (use the app)
+  • MAKE_IT_EXE.md (create .exe)
+  • README.md (complete overview)
+
+═══════════════════════════════════════════════════════════════
+  🎊 READY?
+═══════════════════════════════════════════════════════════════
+
+Let's set up one-command installation!
+
+Next: Open SIMPLE_STEPS.txt
+
+═══════════════════════════════════════════════════════════════
+
+Time to complete: 15 minutes
+Result: Professional one-command install! 🚀
+
+═══════════════════════════════════════════════════════════════

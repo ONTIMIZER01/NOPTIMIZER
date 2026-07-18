@@ -1,0 +1,117 @@
+═══════════════════════════════════════════════════════════════
+  ABOUT "IRM" FILE FORMAT
+═══════════════════════════════════════════════════════════════
+
+You asked about converting to ".irm" file.
+
+I'm not familiar with this format. Here's what I know:
+
+═══════════════════════════════════════════════════════════════
+  POSSIBLE MEANINGS
+═══════════════════════════════════════════════════════════════
+
+1. IRM (Information Rights Management)
+   - Microsoft protection format
+   - Used for protecting documents
+   - Not applicable for applications
+
+2. IMG (Disk Image)
+   - Maybe you meant IMG instead of IRM?
+   - Disk image format
+   - See OTHER_FORMATS.md
+
+3. MSI (Microsoft Installer)
+   - Maybe you meant MSI?
+   - Professional Windows installer
+   - See OTHER_FORMATS.md
+
+4. ISO (Disk Image)
+   - Bootable disk format
+   - See OTHER_FORMATS.md
+
+5. Custom format
+   - Maybe specific to some software?
+   - Please provide more details
+
+═══════════════════════════════════════════════════════════════
+  WHAT I CAN CREATE FOR YOU
+═══════════════════════════════════════════════════════════════
+
+Instead of "IRM", I can create:
+
+✅ EXE - Standalone application
+   → Use: CREATE_EXE.bat
+
+✅ SETUP.EXE - Professional installer
+   → Use: CREATE_INSTALLER.bat
+
+✅ MSI - Windows installer package
+   → Use: Electron Builder
+
+✅ ZIP - Compressed archive
+   → Right-click folder → Send to ZIP
+
+✅ PORTABLE.EXE - Single file application
+   → See: OTHER_FORMATS.md
+
+✅ NSIS - Nullsoft installer
+   → See: OTHER_FORMATS.md
+
+═══════════════════════════════════════════════════════════════
+  RECOMMENDED FORMATS
+═══════════════════════════════════════════════════════════════
+
+For most users, I recommend:
+
+OPTION 1: Standalone .EXE
+  File: CREATE_EXE.bat
+  Result: Opnonti Pro.exe
+  Use: Just run it, no installation
+
+OPTION 2: Professional Installer
+  File: CREATE_INSTALLER.bat
+  Result: Opnonti Pro Setup.exe
+  Use: Install like real software
+
+OPTION 3: ZIP Archive
+  Method: Right-click → Send to ZIP
+  Result: Opnonti Pro.zip
+  Use: Extract and run
+
+═══════════════════════════════════════════════════════════════
+  PLEASE CLARIFY
+═══════════════════════════════════════════════════════════════
+
+Can you tell me:
+
+1. Where did you see "IRM" format?
+2. What software uses it?
+3. What do you want to do with it?
+4. Is it for a specific program/emulator?
+
+With more details, I can help you better!
+
+═══════════════════════════════════════════════════════════════
+  MEANWHILE, USE THESE
+═══════════════════════════════════════════════════════════════
+
+While we figure out "IRM", you can:
+
+→ Create EXE: Double-click CREATE_EXE.bat
+→ Create Installer: Double-click CREATE_INSTALLER.bat
+→ Read formats: OTHER_FORMATS.md
+
+These will work for 99% of use cases!
+
+═══════════════════════════════════════════════════════════════
+  NEED HELP?
+═══════════════════════════════════════════════════════════════
+
+Read these files:
+  - OTHER_FORMATS.md (all formats explained)
+  - MAKE_IT_EXE.md (EXE creation guide)
+  - QUICK_EXE_GUIDE.txt (simple guide)
+
+Or just tell me what you're trying to achieve!
+
+═══════════════════════════════════════════════════════════════
